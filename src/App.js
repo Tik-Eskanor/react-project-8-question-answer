@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import data from "./data"
+import Question from "./Components/Question"
 
-function App() {
+
+export default function App()
+{
+  let [questions, setQuestions] = React.useState(data)
+
+  let questionComponents = questions.map((item)=>{
+      return(
+          <Question key={item.id} props={item}/>
+      )
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <main>
+      <div className="container">
+       <section className="box">
+          <h1>Questions and answer</h1>
+          {questionComponents}
+       </section>
+      </div>
+    </main>
+  )
 }
-
-export default App;
