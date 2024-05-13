@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-project-8-question-answer/static/css/main.3b4926cc.css",
+    "main.js": "/react-project-8-question-answer/static/js/main.91b43508.js",
+    "index.html": "/react-project-8-question-answer/index.html",
+    "main.3b4926cc.css.map": "/react-project-8-question-answer/static/css/main.3b4926cc.css.map",
+    "main.91b43508.js.map": "/react-project-8-question-answer/static/js/main.91b43508.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b4926cc.css",
+    "static/js/main.91b43508.js"
+  ]
+}
